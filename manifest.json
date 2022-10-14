@@ -1,6 +1,6 @@
 {
 	"manifest_version": 2,
-	
+
 	"name": "Selective Scrubber",
 	"description": "Those secret sites? Begone from my history!",
 	"version": "1.0.0",
@@ -9,17 +9,17 @@
 		"48": "images/icon_48.png",
 		"96": "images/icon_96.png"
 	},
-		
-	"permissions": ["history", "storage"],
+
+	"permissions": ["history", "storage", "tabs"],
 	"background": {
 		"persistent": false,
 		"scripts": ["js/clear_history.js"]
 	},
-	
+
 	"browser_action": {
 		"default_icon": "images/icon_96.png"
 	},
-	
+
 	"options_ui": {
 		"page": "options.html",
 		"chrome_style": true
